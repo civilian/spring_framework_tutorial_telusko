@@ -1,7 +1,12 @@
 package com.mavin.Telusko;
 
-public class Tyre{
+public class OtherTyre{
     private String brand;
+
+    public OtherTyre(String brand){
+        super();
+        this.brand = brand;
+    }
 
     public String getBrand() {
         return brand;
@@ -13,6 +18,6 @@ public class Tyre{
 
     @Override
     public String toString() {
-        return "Tyre";
+        return "Tyre [brand=" + brand + "]";
     }
 }
