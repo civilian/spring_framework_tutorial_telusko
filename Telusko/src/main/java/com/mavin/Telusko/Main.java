@@ -11,14 +11,12 @@ public class Main
 {
     public static void main( String[] args ) {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-        // Vehicle obj = (Vehicle) context.getBean("bike");
-        // obj.drive();
         // OtherTyre ot = (OtherTyre) context.getBean("other_tyre");
         // System.out.println(ot);
+        // Tyre t = (Tyre) context.getBean("tyre");
+        // System.out.println(t);
 
-        Tyre t = (Tyre) context.getBean("tyre");
-        System.out.println(t);
-
-        
+        Vehicle obj = (Vehicle) context.getBean("bike");
+        obj.drive();
     }
 }
