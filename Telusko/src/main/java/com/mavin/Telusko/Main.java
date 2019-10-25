@@ -15,8 +15,7 @@ public class Main
         // System.out.println(ot);
         // Tyre t = (Tyre) context.getBean("tyre");
         // System.out.println(t);
-
-        Vehicle obj = (Vehicle) context.getBean("bike");
+        Vehicle obj = (Vehicle) context.getBean("car");
         obj.drive();
     }
 }

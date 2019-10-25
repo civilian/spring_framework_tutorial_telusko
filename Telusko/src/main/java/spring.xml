@@ -7,10 +7,10 @@
    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
    http://www.springframework.org/schema/context
    http://www.springframework.org/schema/context/spring-context-4.0.xsd">
-    <!-- <bean id="vehicle" class="com.mavin.Telusko.Car"></bean> -->
+    <bean id="vehicle" class="com.mavin.Telusko.Car"></bean>
     <context:component-scan base-package="com.mavin.Telusko"></context:component-scan>
     <bean id="other_tyre" class="com.mavin.Telusko.OtherTyre">
-        <!-- <property name="brand" value="Ceat"></property> -->
+        <property name="brand" value="Ceat"></property>
         <constructor-arg value='MRF'></constructor-arg>
     </bean>
 
