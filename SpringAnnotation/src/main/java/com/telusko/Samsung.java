@@ -1,12 +1,14 @@
 package com.telusko;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("mySamsung")
 public class Samsung{
 
     @Autowired
+    @Qualifier("mediaTek")
     MobileProcessor cpu;
 
     public MobileProcessor getCpu(){

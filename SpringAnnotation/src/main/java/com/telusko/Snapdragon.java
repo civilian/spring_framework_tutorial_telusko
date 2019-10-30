@@ -2,7 +2,7 @@ package com.telusko;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component //Non qualified and decapitalize
 public class Snapdragon implements MobileProcessor{
 
     public void process(){
